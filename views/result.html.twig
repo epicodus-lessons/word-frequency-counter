@@ -10,7 +10,13 @@
             <header>
                 <h1>Word Frequency Counter</h1>
             </header>
-            <p>That word is contained in your sentence {{ result }} many times!</p>
+            {% if result > 1 %}
+            <p>That word is contained in your sentence {{ result }} times!</p>
+            {% elseif result == 1 %}
+            <p>That word is contained in your sentence {{ result }} time!</p>
+            {% elseif result == 0 %}
+            <p>That word is not contained in your sentence!</p>
+            {% endif %}
             <p><a href="/">Try another word/sentence combination</a></p>
         </div>
     </body>
