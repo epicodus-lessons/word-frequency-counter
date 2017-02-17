@@ -145,6 +145,20 @@
             $this->assertEquals(1, $result);
         }
 
+        function test_multiplewordstrings_anagrams()
+        {
+            //Arrange
+            $test_WordFrequency = new RepeatCounter;
+            $word = "read";
+            $string = "the dear boy";
+
+            //Act
+            $result = $test_WordFrequency->CountRepeats($word, $string);
+
+            //Assert
+            $this->assertEquals(0, $result);
+        }
+
     }
 
 

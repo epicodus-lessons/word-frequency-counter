@@ -19,16 +19,17 @@ This webpage will allow a user to input a string and a word to search and will d
 
 |Behavior|Input|Output|
 |--------|-----|------|
-| Enter a word to search with a single word string | "cat" and "cat" | "1" |
-| Enter a word to search with a single word string containing none | "cat" and "bat" | "0" |
-| Enter a word to search with a multiple word string | "cat" and "the cat in the hat" | "1" |
-| Enter a word to search with a multiple word string containing none | "cat" and "the bat in the hat" | "0" |
-| Enter a word to search with a multiple word string with two instances | "cat" and "the cat by the cat" | "2" |
-| Enter a word to search with a multiple word string with multiple instances | "cat" and "the cat by the cat with a cat" | "3" |
-| Enter a word to search with a multiple word string with part of words contained | "cat" and "the cat in the cathedral" | "1" |
-| Enter a word to search with a string containing non-letter characters | "cat" and "the cat, the bat, and the car by the cat" | "2" |
-| Enter a word to search with a string containing upper and lower cases | "cat" and "The Cat, the Bat, and the Car by the Cat" | "2" |
-| Enter a word to search with a string containing words with dashes | "cat" and "cat-bear" | "1" |
+| Enter a word to search with a single word string | "cat" and "cat" | 1 |
+| Enter a word to search with a single word string containing none | "cat" and "bat" | 0 |
+| Enter a word to search with a multiple word string | "cat" and "the cat in the hat" | 1 |
+| Enter a word to search with a multiple word string containing none | "cat" and "the bat in the hat" | 0 |
+| Enter a word to search with a multiple word string with two instances | "cat" and "the cat by the cat" | 2 |
+| Enter a word to search with a multiple word string with multiple instances | "cat" and "the cat by the cat with a cat" | 3 |
+| Enter a word to search with a multiple word string with part of words contained | "cat" and "the cat in the cathedral" | 1 |
+| Enter a word to search with a string containing non-letter characters | "cat" and "the cat, the bat, and the car by the cat" | 2 |
+| Enter a word to search with a string containing upper and lower cases | "cat" and "The Cat, the Bat, and the Car by the Cat" | 2 |
+| Enter a word to search with a string containing words with dashes | "cat" and "cat-bear" | 1 |
+| Enter a word to search with a string containing an anagram word | "read" and "the dear boy" | 0 |
 
 ## Known Bugs
 
