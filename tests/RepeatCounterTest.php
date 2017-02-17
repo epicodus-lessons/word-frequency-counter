@@ -131,6 +131,20 @@
             $this->assertEquals(2, $result);
         }
 
+        function test_multiplewordstrings_wordswithdashes()
+        {
+            //Arrange
+            $test_WordFrequency = new RepeatCounter;
+            $word = "cat";
+            $string = "cat-bear";
+
+            //Act
+            $result = $test_WordFrequency->CountRepeats($word, $string);
+
+            //Assert
+            $this->assertEquals(1, $result);
+        }
+
     }
 
 
