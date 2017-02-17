@@ -19,6 +19,20 @@
             $this->assertEquals("1", $result);
         }
 
+        function test_onewordstrings_nomatch()
+        {
+            //Arrange
+            $test_WordFrequency = new RepeatCounter;
+            $word = "cat";
+            $string = "bat";
+
+            //Act
+            $result = $test_WordFrequency->CountRepeats($word, $string);
+
+            //Assert
+            $this->assertEquals("0", $result);
+        }
+
     }
 
 
