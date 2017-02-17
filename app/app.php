@@ -20,7 +20,7 @@
         $stringtosearch = $_POST['string_to_search'];
         $result = $new_word_frequency->CountRepeats($keyword, $stringtosearch);
 
-        return $app['twig']->render('result.html.twig', array('result' => $result));
+        return $app['twig']->render('result.html.twig', array('result' => $result, 'keyword' => $keyword, 'stringsearch' => $stringtosearch));
 
     });
 

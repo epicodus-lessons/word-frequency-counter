@@ -1,0 +1,66 @@
+h1, h3 {
+    text-align: center;
+    font-family: 'Sansita', sans-serif;
+}
+
+p {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+header {
+    display: block;
+    background-color: #247193;
+    color: #FFFFFF;
+    position: fixed;
+    width: 100%;
+}
+
+#words-form, #results-box {
+    margin-top: 100px;
+    background-color: lightblue;
+    border-radius: 15px;
+    margin-bottom: 100px;
+}
+
+.btn {
+    margin: 0 auto;
+    display: block;
+}
+
+.words-deco {
+    font-family: 'Sansita', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #46667B;
+}
+
+.number-of-times {
+    color: #BB2727;
+}
+
+.quotes {
+    color: #FFFFFF;
+}
+
+.footer {
+    background-color: #9EC2D2;
+    clear: both;
+    position: fixed;
+    z-index: 10;
+    height: 3em;
+    margin-top: -3em;
+    text-align: center;
+    bottom: 0;
+    padding: 1rem;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.footer p {
+    color: #525557;
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+}
