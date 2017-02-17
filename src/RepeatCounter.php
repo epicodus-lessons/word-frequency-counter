@@ -9,7 +9,7 @@
 
             foreach ($search_string_words as $word_to_compare) {
                 $word_letters = str_split($word_to_compare);
-                if (array_diff($keyword_letters, $word_letters) === array()) {
+                if (array_diff($keyword_letters, $word_letters) === array() && strlen($word_to_compare) === strlen($keyword)) {
                     ++$total_matches;
                 }
             }
