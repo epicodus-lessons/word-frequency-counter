@@ -7,6 +7,8 @@
             $search_string_letters = str_split($search_string);
             if (array_diff($keyword_letters, $search_string_letters) === array()) {
                 return "1";
+            } else {
+                return "0";
             }
         }
 
