@@ -117,6 +117,20 @@
             $this->assertEquals(2, $result);
         }
 
+        function test_multiplewordstrings_upperlowercase()
+        {
+            //Arrange
+            $test_WordFrequency = new RepeatCounter;
+            $word = "cat";
+            $string = "The Cat, the Bat, and the Car by the Cat";
+
+            //Act
+            $result = $test_WordFrequency->CountRepeats($word, $string);
+
+            //Assert
+            $this->assertEquals(2, $result);
+        }
+
     }
 
 
