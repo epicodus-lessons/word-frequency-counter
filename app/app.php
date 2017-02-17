@@ -39,6 +39,11 @@
             $error_input = "Please enter a single word without numbers or spaces";
         }
         $stringtosearch = $_POST['string_to_search'];
+
+        if (empty($keyword) || empty($stringtosearch)) {
+            $error_input = "Please enter a single word without numbers or spaces and a word or sentence to compare it to";
+        }
+
         $result = $new_word_frequency->CountRepeats($keyword, $stringtosearch);
 
         return $app['twig']->render('result.html.twig', array('result' => $result, 'keyword' => $keyword, 'stringsearch' => $stringtosearch, 'error' => $error_input));
