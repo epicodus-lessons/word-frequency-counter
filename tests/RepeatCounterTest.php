@@ -75,6 +75,20 @@
             $this->assertEquals(2, $result);
         }
 
+        function test_multiplewordstrings_multiplematches()
+        {
+            //Arrange
+            $test_WordFrequency = new RepeatCounter;
+            $word = "cat";
+            $string = "the cat by the cat with the cat";
+
+            //Act
+            $result = $test_WordFrequency->CountRepeats($word, $string);
+
+            //Assert
+            $this->assertEquals(3, $result);
+        }
+
     }
 
 
