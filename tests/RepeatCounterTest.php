@@ -89,6 +89,20 @@
             $this->assertEquals(3, $result);
         }
 
+        function test_multiplewordstrings_wholewordonly()
+        {
+            //Arrange
+            $test_WordFrequency = new RepeatCounter;
+            $word = "cat";
+            $string = "the cat in the cathedral";
+
+            //Act
+            $result = $test_WordFrequency->CountRepeats($word, $string);
+
+            //Assert
+            $this->assertEquals(1, $result);
+        }
+
     }
 
 
