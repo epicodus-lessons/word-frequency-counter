@@ -13,16 +13,21 @@
         <div class="container">
             <div class="panel" id="results-box">
                 <div class="panel-body">
-                    <p>You were looking for the word: </p>
-                    <p><span class="quotes">"</span><span class="words-deco">{{ keyword }}</span><span class="quotes">"</span></p>
-                    <p>You were looking for it inside: </p>
-                    <p><span class="quotes">"</span><span class="words-deco">{{ stringsearch }}</span><span class="quotes">"</span></p>
-                    {% if result > 1 %}
-                    <h3>That word is contained in your sentence <span class="number-of-times">{{ result }}</span> times! <a href="/">Try another?</a></h3>
-                    {% elseif result == 1 %}
-                    <h3>That word is contained in your sentence <span class="number-of-times">{{ result }}</span> time! <a href="/">Try another?</a></h3>
-                    {% elseif result == 0 %}
-                    <h3>That word is not contained in your sentence! <a href="/">Try another?</a></h3>
+                    {% if error %}
+                        <p>{{ error }}.</p>
+                        <p><a href="/">Try again</a></p>
+                    {% else %}
+                        <p>You were looking for the word: </p>
+                        <p><span class="quotes">"</span><span class="words-deco">{{ keyword }}</span><span class="quotes">"</span></p>
+                        <p>You were looking for it inside: </p>
+                        <p><span class="quotes">"</span><span class="words-deco">{{ stringsearch }}</span><span class="quotes">"</span></p>
+                        {% if result > 1 %}
+                        <h3>That word is contained in your sentence <span class="number-of-times">{{ result }}</span> times! <a href="/">Try another?</a></h3>
+                        {% elseif result == 1 %}
+                        <h3>That word is contained in your sentence <span class="number-of-times">{{ result }}</span> time! <a href="/">Try another?</a></h3>
+                        {% elseif result == 0 %}
+                        <h3>That word is not contained in your sentence! <a href="/">Try another?</a></h3>
+                        {% endif %}
                     {% endif %}
                 </div>
             </div>
