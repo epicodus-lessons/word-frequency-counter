@@ -4,7 +4,9 @@
         function CountRepeats($keyword, $search_string)
         {
             $keyword_letters = str_split($keyword);
-            $search_string_words = explode(" ", $search_string);
+            $special_characters = array(",", ".", "!", "?", "'s", "(", ")");
+            $clean_search_string = str_replace($special_characters, "", $search_string);
+            $search_string_words = explode(" ", $clean_search_string);
             $total_matches = 0;
 
             foreach ($search_string_words as $word_to_compare) {
