@@ -13,7 +13,6 @@
             $total_matches = 0;
 
             foreach ($search_string_words as $word_to_compare) {
-                $word_letters = str_split($word_to_compare);
                 if ($keyword_lowerc === $word_to_compare) {
                     ++$total_matches;
                 }
